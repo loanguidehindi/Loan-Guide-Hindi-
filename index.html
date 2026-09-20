@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loan Guide Hindi – Loan की पूरी जानकारी</title>
+<meta name="description" content="Loan Guide Hindi: Personal Loan, Business Loan, Home Loan, Mudra Loan, EMI Calculator, ब्याज, CIBIL, documents और loan से जुड़ी आसान जानकारी।">
+<meta name="keywords" content="loan guide hindi, loan ki jankari, EMI calculator, personal loan, business loan, mudra loan, home loan">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
+.wrap{max-width:1100px;margin:auto;padding:0 16px}
+header{background:linear-gradient(135deg,#0f3d91,#2563eb);color:white;padding:25px 0}
+.brand{font-size:28px;font-weight:800}.tag{opacity:.9}
+nav{background:#fff;box-shadow:0 2px 8px #00000010;position:sticky;top:0;z-index:5}
+nav .wrap{display:flex;gap:20px;overflow:auto;padding-top:12px;padding-bottom:12px}
+nav a{white-space:nowrap;text-decoration:none;color:#24324a;font-weight:700}
+.hero{padding:42px 0;text-align:center}.hero h1{font-size:38px;margin:0 0 12px}.hero p{color:#5b667a;font-size:18px}
+.btn{display:inline-block;background:#2563eb;color:white;text-decoration:none;padding:12px 20px;border-radius:10px;font-weight:700}
+.ad{min-height:90px;border:1px dashed #cbd5e1;background:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#94a3b8;margin:20px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:white;border-radius:16px;padding:22px;box-shadow:0 5px 20px #00000009}.card h2{margin-top:0}
+.card p{color:#5b667a}.icon{font-size:30px}
+input,select,button{width:100%;padding:12px;margin:6px 0;border:1px solid #d1d5db;border-radius:9px;font-size:16px}
+button{background:#2563eb;color:#fff;border:0;font-weight:700;cursor:pointer}.result{margin-top:12px;font-weight:700;background:#eff6ff;padding:12px;border-radius:10px}
+section{padding:25px 0}h2.section-title{text-align:center;font-size:29px}
+.notice{background:#fff7ed;border-left:4px solid #f97316;padding:15px;border-radius:8px}
+footer{background:#111827;color:#d1d5db;margin-top:30px;padding:30px 0}footer a{color:white;margin-right:15px}
+@media(max-width:600px){.hero h1{font-size:29px}.brand{font-size:24px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">💰 Loan Guide Hindi</div><div class="tag">Loan को आसान भाषा में समझें</div></div></header>
+<nav><div class="wrap"><a href="#types">Loan Types</a><a href="#calculator">EMI Calculator</a><a href="#eligibility">Eligibility</a><a href="#documents">Documents</a><a href="#safety">Safety</a><a href="#about">About</a></div></nav>
+
+<main class="wrap">
+<section class="hero">
+<h1>Loan की पूरी जानकारी हिंदी में</h1>
+<p>EMI, ब्याज, CIBIL, documents, eligibility और अलग-अलग loan के बारे में आसान भाषा में जानें।</p>
+<a class="btn" href="#calculator">EMI Calculate करें</a>
+</section>
+
+<div class="ad">Advertisement Space</div>
+
+<section id="types">
+<h2 class="section-title">कौन-कौन से Loan होते हैं?</h2>
+<div class="grid">
+<div class="card"><div class="icon">👤</div><h2>Personal Loan</h2><p>व्यक्तिगत जरूरतों के लिए लिया जाने वाला loan। Interest rate, processing fee और repayment terms lender के अनुसार अलग हो सकते हैं।</p></div>
+<div class="card"><div class="icon">🏪</div><h2>Business Loan</h2><p>व्यवसाय शुरू करने या बढ़ाने के लिए financing options की जानकारी यहाँ समझें।</p></div>
+<div class="card"><div class="icon">🏠</div><h2>Home Loan</h2><p>घर खरीदने, बनाने या कुछ मामलों में renovation के लिए उपलब्ध housing finance को समझें।</p></div>
+<div class="card"><div class="icon">🇮🇳</div><h2>Mudra Loan</h2><p>छोटे व्यवसायों के लिए सरकारी योजना से जुड़ी पात्रता और official information हमेशा संबंधित सरकारी स्रोत से verify करें।</p></div>
+<div class="card"><div class="icon">🚜</div><h2>Agriculture Loan</h2><p>कृषि और allied activities से जुड़े loan options की basic जानकारी।</p></div>
+<div class="card"><div class="icon">🚗</div><h2>Vehicle Loan</h2><p>दो/चार पहिया वाहन financing में EMI, down payment और total cost को समझें।</p></div>
+</div>
+</section>
+
+<section id="calculator">
+<h2 class="section-title">🧮 EMI Calculator</h2>
+<div class="card">
+<label>Loan Amount (₹)</label><input id="principal" type="number" placeholder="उदाहरण: 100000">
+<label>Annual Interest Rate (%)</label><input id="interest" type="number" step="0.01" placeholder="उदाहरण: 12">
+<label>Loan Tenure (Months)</label><input id="tenure" type="number" placeholder="उदाहरण: 24">
+<button onclick="calculate()">EMI Calculate करें</button>
+<div id="result" class="result">अपनी details भरकर Calculate दबाएँ।</div>
+</div>
+</section>
+
+<div class="ad">Advertisement Space</div>
+
+<section id="eligibility">
+<h2 class="section-title">Loan लेने से पहले क्या देखें?</h2>
+<div class="grid">
+<div class="card"><h2>📈 CIBIL/credit history</h2><p>Credit history lender के risk assessment में एक factor हो सकती है। केवल एक score देखकर loan approval की guarantee नहीं होती।</p></div>
+<div class="card"><h2>💵 Income</h2><p>Lender आपकी income, existing obligations और repayment capacity जैसे factors देख सकता है।</p></div>
+<div class="card"><h2>📃 Interest & fees</h2><p>Interest के साथ processing fee, late fee, insurance या अन्य applicable charges को भी पढ़ें।</p></div>
+</div>
+</section>
+
+<section id="documents">
+<h2 class="section-title">आमतौर पर मांगे जा सकने वाले Documents</h2>
+<div class="card">
+<ul>
+<li>पहचान और address proof</li><li>PAN जैसे financial/tax documents, जहाँ लागू हों</li>
+<li>Income proof / salary slips / bank statements, product और lender के अनुसार</li>
+<li>Business loan में business-related documents, जहाँ लागू हों</li>
+</ul>
+<p><b>नोट:</b> Exact documents lender और loan product के अनुसार बदलते हैं। आवेदन से पहले official lender requirements देखें।</p>
+</div>
+</section>
+
+<section id="safety">
+<h2 class="section-title">⚠️ Loan Fraud से बचें</h2>
+<div class="notice">
+<ul>
+<li>Loan approval के नाम पर अनजान व्यक्ति को OTP, PIN या password न दें।</li>
+<li>किसी भी app/website पर documents upload करने से पहले उसका official source verify करें।</li>
+<li>“100% guaranteed loan” जैसे दावों को बिना verification के भरोसा न करें।</li>
+<li>Agreement में interest, fees, repayment schedule और late-payment terms पढ़ें।</li>
+<li>किसी lender की current terms हमेशा उसकी official website/branch से verify करें।</li>
+</ul>
+</div>
+</section>
+
+<section id="about">
+<div class="card"><h2>About Loan Guide Hindi</h2><p>Loan Guide Hindi एक educational website concept है जिसका उद्देश्य financial products को आसान भाषा में समझाना है। यह किसी व्यक्ति को loan लेने की व्यक्तिगत सलाह या approval guarantee नहीं देता।</p><p><b>Disclaimer:</b> Interest rates, eligibility, fees और government schemes की conditions समय के साथ बदल सकती हैं। Financial decision लेने से पहले official lender/government source से current details verify करें।</p></div>
+</section>
+
+<section id="contact">
+<div class="card"><h2>Contact</h2><p>Email: <b>your-email@example.com</b></p><p>Production में publish करने से पहले अपना वास्तविक contact email और business details यहाँ डालें।</p></div>
+</section>
+
+<section id="privacy">
+<div class="card"><h2>Privacy Policy</h2><p>यह starter website calculator inputs को किसी server पर भेजने के लिए designed नहीं है। Production website में analytics, ads, cookies और third-party services इस्तेमाल करने से पहले उनकी वास्तविक privacy disclosures जोड़ें।</p></div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Loan Guide Hindi · <a href="#privacy">Privacy</a> · <a href="#contact">Contact</a></div></footer>
+
+<script>
+function calculate(){
+ const P=Number(document.getElementById('principal').value);
+ const annual=Number(document.getElementById('interest').value);
+ const N=Number(document.getElementById('tenure').value);
+ const out=document.getElementById('result');
+ if(P<=0||annual<0||N<=0){out.textContent="कृपया सही values भरें।";return}
+ const r=annual/12/100;
+ const emi=r===0?P/N:(P*r*Math.pow(1+r,N))/(Math.pow(1+r,N)-1);
+ const total=emi*N, interest=total-P;
+ out.innerHTML=`Monthly EMI: ₹${emi.toFixed(0)}<br>Total Payment: ₹${total.toFixed(0)}<br>Total Interest: ₹${interest.toFixed(0)}`;
+}
+</script>
+</body>
+</html>
