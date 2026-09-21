@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Loan EMI Calculator: मासिक EMI और कुल ब्याज निकालें | Loan Guide Hindi</title>
+<meta name="description" content="Loan की रकम, ब्याज दर और अवधि डालकर मासिक EMI, कुल ब्याज और कुल भुगतान का अंदाजा लगाएँ। सरल हिंदी में EMI calculator।">
+<link rel="canonical" href="https://loanguidehindi.github.io/Loan-Guide-Hindi-/emi-calculator.html">
+<meta name="theme-color" content="#14284b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Loan Guide Hindi">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:title" content="Loan EMI Calculator: मासिक EMI और कुल ब्याज निकालें | Loan Guide Hindi">
+<meta property="og:description" content="Loan की रकम, ब्याज दर और अवधि डालकर मासिक EMI, कुल ब्याज और कुल भुगतान का अंदाजा लगाएँ। सरल हिंदी में EMI calculator।">
+<meta property="og:url" content="https://loanguidehindi.github.io/Loan-Guide-Hindi-/emi-calculator.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2314284b'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23f0b429' font-family='Arial'%3E%E2%82%B9%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&family=Rozha+One&display=swap">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="">
+<a class="skip" href="#main">मुख्य सामग्री पर जाएँ</a>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true">₹</span>Loan Guide Hindi</a>
+    <nav aria-label="मुख्य मेनू"><a href="index.html">Home</a><a href="loans.html">Loans</a><a href="emi-calculator.html" aria-current="page">EMI Calculator</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main id="main" class="wrap page">
+<h1>Loan EMI Calculator</h1>
+<p>Loan की रकम, ब्याज दर और अवधि भरकर अपनी मासिक EMI, कुल ब्याज और कुल भुगतान का अंदाजा लगाएँ। यह calculator reducing balance तरीके से गणना करता है।</p>
+<form id="emiForm" class="calc" novalidate>
+<label>Loan की रकम (₹)<input id="c-amt" type="number" inputmode="decimal" min="1" step="any" placeholder="जैसे 500000" required></label>
+<div class="two">
+<label>ब्याज दर (सालाना %)<input id="c-rate" type="number" inputmode="decimal" min="0" max="100" step="any" placeholder="जैसे 12" required></label>
+<label>अवधि<input id="c-ten" type="number" inputmode="numeric" min="1" step="1" placeholder="जैसे 36" required></label>
+</div>
+<label>अवधि की इकाई<select id="c-unit"><option value="months">महीने</option><option value="years">साल</option></select></label>
+<button type="submit">EMI निकालें</button>
+<p class="err" id="c-err" role="alert"></p>
+<div class="res" id="c-res" hidden>
+<div class="res-grid"><div>मासिक EMI<strong id="c-emi">-</strong></div><div>कुल ब्याज<strong id="c-int">-</strong></div><div>कुल भुगतान<strong id="c-tot">-</strong></div></div>
+<div class="split" aria-hidden="true" style="margin-top:14px"><i id="c-p"></i><b id="c-i"></b></div>
+<div class="legend"><span>हरा: मूलधन</span><span>पीला: ब्याज</span></div>
+</div>
+</form>
+<p class="note warn">यह calculator सिर्फ अनुमान के लिए है। असली EMI lender की दर, processing fee, GST और अन्य शुल्कों के अनुसार अलग हो सकती है।</p>
+<div class="article">
+<h2>EMI कैसे निकलती है?</h2>
+<p>EMI = P × r × (1+r)^n ÷ ((1+r)^n − 1), जहाँ P loan की रकम है, r मासिक ब्याज दर (सालाना दर ÷ 12 ÷ 100) और n महीनों में अवधि है। उदाहरण के लिए ₹5,00,000 पर 12 प्रतिशत सालाना ब्याज और 36 महीने की अवधि में EMI लगभग ₹16,607 आती है।</p>
+<h2>Calculator का सही इस्तेमाल</h2>
+<ul>
+<li>अलग-अलग अवधि डालकर देखें कि EMI और कुल ब्याज कैसे बदलते हैं। लंबी अवधि में EMI कम होती है पर कुल ब्याज बढ़ता है।</li>
+<li>Offer में ब्याज दर "flat" बताई गई हो तो उसे reducing balance के बराबर न मानें। Flat rate असल में काफ़ी ऊँची पड़ती है।</li>
+<li>अपनी सभी EMI मिलाकर मासिक income के 40 से 50 प्रतिशत से ज्यादा न रखने की कोशिश करें।</li>
+</ul>
+<p>विस्तार से समझने के लिए पढ़ें: <a href="emi-kaise-calculate-kare.html">EMI कैसे Calculate करें</a>, <a href="loan-prepayment-foreclosure.html">Loan Prepayment और Foreclosure</a> और <a href="fixed-vs-floating-interest-rate.html">Fixed बनाम Floating rate</a>।</p>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-name">Loan Guide Hindi</p>
+    <p>यह वेबसाइट सामान्य वित्तीय शिक्षा और जानकारी के लिए है। हम बैंक या NBFC नहीं हैं, loan देने का फैसला हमेशा lender करता है, और यहाँ की जानकारी वित्तीय, कानूनी या tax सलाह नहीं है। किसी भी loan decision से पहले lender की official शर्तें और शुल्क जरूर जाँचें।</p>
+    <p class="foot-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a><a href="terms.html">Terms</a></p>
+    <p class="copy">© 2026 Loan Guide Hindi</p>
+  </div>
+</footer>
+<script src="site.js?v=2" defer></script>
+</body>
+</html>
