@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loanguidehindi.github.io/Loan-Guide-Hindi-/sitemap.xml
